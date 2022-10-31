@@ -13,6 +13,7 @@ const dataSeconds = document.querySelector ('span[data-seconds]')
 function addLeadingZero(value){
     return value.toString().padStart(2,'0');
   }
+  let ms = 0
   let btnActive = false
 
 
