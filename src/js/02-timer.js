@@ -1,10 +1,7 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
-const btnStart = document.querySelector ('button[data-start]');
-const timerId = document.querySelector ('timer');
-
-
+const btnStart = document.querySelector ('button[data-start]')
 const dataDays = document.querySelector ('span[data-days]')
 const dataHours = document.querySelector ('span[data-hours]')
 const dataMinutes = document.querySelector ('span[data-minutes]')
