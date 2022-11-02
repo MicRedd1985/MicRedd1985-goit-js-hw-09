@@ -57,9 +57,12 @@ const options = {
         }
         btnActive = true;
         console.log('start')
-        setInterval(() => {
+        timerID = setInterval(() => {
           let nowDate = new Date()
           ms = fltpckr.selectedDates[0] - nowDate;
+          if (ms <= 0) {
+          return  stopTimer() }
+      
           const timeElements = convertMs(ms)
           console.log('countdown ->', timeElements)
           console.log(timeElements.days)
